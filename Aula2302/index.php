@@ -11,8 +11,30 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Olá! Hoje é dia 25 de janeireo de 2022</h1>
+    <h1>
+      Olá! Hoje é dia 
+      <?php
+          //Comentário
+          #comentário
+          /*
 
+           Comentário
+
+          */
+          echo "<p>".date('d/m/Y')."</p>";
+          print("Oi, ");
+          $umaVariavel = 20;
+          $umaVariavel = "Gabriel";
+          //echo "Meu nome é: ".$umaVariavel;
+          //echo "Meu nome é: $umaVariavel";
+          echo "Meu nome é $umaVariavel";
+          $total = 30 * 10 / 2 -4 + 1;
+          $total++;
+          $total--;
+          --$total;
+          echo $total;
+      ?>
+    </h1>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
