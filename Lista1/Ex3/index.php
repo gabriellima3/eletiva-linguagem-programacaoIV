@@ -10,17 +10,22 @@
 
     <title>Hello, world!</title>
   </head>
-  <body>
-    <h1>Cálculos</h1>
-    
-    <?php
-      $valor1 = $_POST['valor1'];
-      $valor2 = $_POST['valor2'];
-      
-      
+  <body class="container">
+    <h1>Exercício 3</h1>
 
-      
-    ?>
+    <form method="post" action="resposta.php"> <!--get manda dados e post manda na propria requisição-->
+      <div class="row">
+        <div class="col">
+          <label for="valor1" class="label-control">Informe o valor: </label>
+          <input type="number" name="valor1" id="valor1" class="form-control"/>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <button type="submit "class="btn btn-danger">Enviar</button>
+        </div>
+      </div> 
+    </form>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
