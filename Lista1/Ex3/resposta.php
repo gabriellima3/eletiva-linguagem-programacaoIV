@@ -11,16 +11,16 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Cálculos</h1>
+    <h1>Exercício 3</h1>
     
     <?php
       $valor1 = $_POST['valor1'];
-      $valor2 = $_POST['valor2'];
       
+      if ($valor1 > 10)
+        echo "O valor maior que 10";
+      else
+        echo "O valor é menor que 10";
 
-      echo "<br/>";
-      $valorFinal = $valor1 * $valor2;
-      echo "O valor final do produto é de: ".$valorFinal;
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
