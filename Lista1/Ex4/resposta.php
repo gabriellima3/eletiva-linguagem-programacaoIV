@@ -12,15 +12,20 @@
   </head>
   <body>
     <h1>Exercício 4</h1>
-    
     <?php
-      $valor1 = $_POST['valor1'];     
-      if ($valor1 > 0)
-        echo "Valor Positivo";
-      else
-        echo "Valor Negativo";
+      $valor1 = $_POST['valor1'];
       if ($valor1 == 0)
-        echo "Igual a zero"; 
+      {
+        echo "Igual a zero";
+      }
+      elseif ($valor1 > 0)
+      {
+        echo "Valor Positivo";
+      }
+      else
+      {
+        echo "Valor Negativo";
+      }
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
