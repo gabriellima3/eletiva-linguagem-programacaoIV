@@ -17,7 +17,7 @@
           $vetor[$i] = $_POST["valor$i"];
         }
         $posicao = 0;
-        $marior = 0;
+        $maior = 0;
         //var_dump($vetor);
         foreach($vetor as $chave => $valor){
             echo "Posição do Vetor: $chave e seu valor é $valor";
