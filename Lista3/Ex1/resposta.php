@@ -8,29 +8,28 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Resposta Exercício 2</title>
+    <title>Resposta do Exercício 1</title>
   </head>
   <body class="container">
-    <h1>Resposta Exercício 2</h1> 
+    <h1>Resposta do Exercício 1</h1>
     <?php
-        $valorUsuario = $_POST["valorUsuario"];
-        for($i=1;  $i<=3; $i++){
-            $valor = $_POST["valor$i"];
-            if ($valor <=10 && $valor >= 1){
-              $vetor[$i] = $_POST["valor$i"];
-              echo "Valor $valor permitido<br/>";
-            }
-            else 
-              echo "Valor $valor não permitido<br/>";
-        }     
-    
-        foreach($vetor as $chave => $valor)
-        {
-          if ($valorUsuario = $valor)
-            echo "O valor informado está na posição $valorUsuario";
+        function verificarData($dia, $mes, $ano){
+            if (checkdate($mes, $dia, $ano))
+                echo "Essa é uma data válida";
+            else
+                echo "Essa não é uma data válida";
         }
+
+        $diaIU = $_POST['dia'];
+        $mesIU = $_POST['mes'];
+        $anoIU = $_POST['ano'];
+
+        verificarData($diaIU, $mesIU, $anoIU);
+
     ?>
 
+
+    
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

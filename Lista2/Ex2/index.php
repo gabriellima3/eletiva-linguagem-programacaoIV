@@ -15,7 +15,7 @@
     <form method="post" action="resultado.php">
         <div class ="row">
             <?php
-                for ($i=1; $i<=20; $i++){   
+                for ($i=1; $i<=3; $i++){   
             ?>
                 <div class="col-2">
                     <label for="valor<?= $i ?>" class="label-control">Informe o valor <?= $i ?></label>
@@ -31,7 +31,7 @@
                 </div>
         </div>   
         </div>
-            <div class="row">
+            <div class="row mt-3">
                 <div class="col">
                     <button class="btn btn-primary" type="submit"> Enviar</buttom>
                 </div>
