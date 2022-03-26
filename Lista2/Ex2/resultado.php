@@ -14,7 +14,7 @@
     <h1>Resposta Exercício 2</h1> 
     <?php
         $valorUsuario = $_POST["valorUsuario"];
-        for($i=1;  $i<=3; $i++){
+        for($i=1;  $i<=20; $i++){
             $valor = $_POST["valor$i"];
             if ($valor <=10 && $valor >= 1){
               $vetor[$i] = $_POST["valor$i"];
@@ -22,13 +22,27 @@
             }
             else 
               echo "Valor $valor não permitido<br/>";
-        }     
-    
+        }           
+        echo "<br/>";
+        
+        $existe = false;
+
         foreach($vetor as $chave => $valor)
         {
-          if ($valorUsuario = $valor)
-            echo "O valor informado está na posição $valorUsuario";
+          if ($valorUsuario == $valor){
+            echo "O valor $valorUsuario informado está na posição $chave ";
+            $existe = true;
+            echo "<br/>";
+          }
+              
+        } 
+
+        if (!$existe){
+          echo "Valor não encontrado!";
         }
+
+
+        
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
