@@ -15,7 +15,7 @@
     
     <?php
       $valor1 = $_POST['valor1'];
-      
+    
       if ($valor1 > 10)
         echo "O valor maior que 10";
       else

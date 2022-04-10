@@ -11,7 +11,7 @@
     <title>Exercício 1</title>
   </head>
   <body class="container">
-    <h1>Exercício 1</h1>
+    <h1>2 - Exercício 1</h1>
     <form method="post" action="resultado.php">
         <div class ="row">
             <?php
@@ -27,7 +27,7 @@
         </div>
             <div class="row">
                 <div class="col">
-                    <button class="btn btn-primary" type="submit"> Enviar</buttom>
+                    <button class="btn btn-danger" type="submit"> Enviar</buttom>
                 </div>
             </div>
     </form>

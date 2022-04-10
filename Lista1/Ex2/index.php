@@ -11,15 +11,15 @@
     <title>Hello, world!</title>
   </head>
   <body class="container">
-    <h1>Exercício 2</h1>
+    <h1>1 - Exercício 2</h1>
 
     <form method="post" action="resposta.php"> <!--get manda dados e post manda na propria requisição-->
       <div class="row">
-        <div class="col">
+        <div class="col-3">
           <label for="valor1" class="label-control">Informe o valor do kg: </label>
           <input type="number" name="valor1" id="valor1" class="form-control"/>
         </div>
-        <div class="col">
+        <div class="col-3">
           <label for="valor2" class="label-control">Informe a quantidade consumida: </label>
           <input type="number" name="valor2" id="valor2" class="form-control"/>
         </div>
