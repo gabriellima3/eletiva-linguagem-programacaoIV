@@ -19,12 +19,12 @@
     }  
     asort($vet);
     echo "Crescente: <br/>";
-    foreach($vet as $chave => $valor){
+    foreach($vet as $valor){
       echo "$valor, ";
     }
     arsort($vet);
     echo "<br>Decrescente:<br/>";
-    foreach($vet as $chave => $valor){
+    foreach($vet as $valor){
       echo "$valor,  ";
     }
     ?>

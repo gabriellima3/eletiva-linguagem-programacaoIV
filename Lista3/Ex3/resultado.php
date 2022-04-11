@@ -15,14 +15,13 @@
 <body class="container">
     <h1>Exercício 2</h1>
     <?php
-        for ($i = 1; $i <= 1; $i++) {
+        for ($i = 1; $i <= 2; $i++) {
         $vet[$i] = $_POST["numero$i"];
     }  
     function menorNumero($vet)
     {
-        arsort($vet);
-        foreach($vet as $chave => $valor){
-          echo "$valor";
+        echo "O menor é: ";
+        echo min($vet);
     }
     menorNumero($vet);
     ?>

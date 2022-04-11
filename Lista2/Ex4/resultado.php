@@ -18,7 +18,7 @@
         $vet[$i] = $_POST["valor$i"];
     }
     $total = 0;
-    foreach ($vet as $chave => $valor){
+    foreach ($vet as $valor){
         $total = $total + $valor;
     }
     echo "A média dos números é " .($total/10);

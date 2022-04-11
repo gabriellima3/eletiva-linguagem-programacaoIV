@@ -21,7 +21,7 @@
   function ordenar($vet)
   {
     sort($vet);
-    foreach ($vet as $chave => $aluno) {
+    foreach ($vet as $aluno) {
       echo "Aluno(a) = $aluno";
       echo "<br>";
     }
