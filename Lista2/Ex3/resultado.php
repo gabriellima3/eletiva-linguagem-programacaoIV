@@ -15,18 +15,18 @@
     <h1>Exercicio 3</h1>
     <?php
     for ($i = 1; $i <= 10; $i++) {
-        $vet[$i] = $_POST["valor$i"];
+        $vetor[$i] = $_POST["valor$i"];
     }
-    foreach ($vet as $chave => $valor) {
-        $existe = 0;
+    foreach ($vetor as $chave => $valor) {
+        $repetido = 0;
         for ($i = 1; $i <= 10; $i++){
-            if ($vet[$i] == $valor){
-                $existe++;
+            if ($vetor[$i] == $valor){
+                $repetido++;
             }
         }
-        if ($existe >= 2)
-            $vet[$chave] = "-";
-        echo "numero: ".$vet[$chave]."<br>";
+        if ($repetido > 1)
+            $vetor[$chave] = "-";
+        echo "Numero: ".$vetor[$chave]."<br>";
     }
     ?>
 

@@ -9,21 +9,41 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Exercício 2</title>
+    <title>Exercício 5</title>
 </head>
 
 <body class="container">
-    <h1>Exercício 2</h1>
+    <h1>Exercício 5</h1>
     <?php
-        for ($i = 1; $i <= 2; $i++) {
-        $vetor[$i] = $_POST["numero$i"];
-    }  
-    function menorNumero($vetor)
-    {
-        echo "O menor é: ";
-        echo min($vetor);
-    }
-    menorNumero($vetor);
+        $peso = $_POST["peso"];
+        $altura = $_POST["altura"];
+            
+     function IMC($peso, $altura){
+        $imc = ($peso / ($altura * $altura))*10000;
+        $printimc = number_format($imc,2);
+        echo "Seu IMC é de $printimc";
+        echo "<br/>";
+        echo "Situação: ";
+        if ($imc <= 18.5){
+            echo "Abaixo do peso";
+        }
+        elseif ($imc >= 18.6 && $imc <= 24.9){
+            echo "Peso ideal (parabéns)"; 
+        }
+        elseif ($imc >= 25 && $imc <= 29.9){
+            echo "Levemente acima do peso";    
+        }
+        elseif ($imc >= 30 && $imc <= 34.9){
+            echo "Obesidade Grau I";
+        }
+        elseif ($imc >= 35 && $imc <= 39.9){
+            echo "Obesidade Grau II (severa)";
+        }
+        elseif ($imc >= 40){
+            echo "Obesidade Grau III (mórbida)";
+        }
+        }
+    IMC($peso, $altura);
     ?>
     <!-- Optional JavaScript; choose one of the two! -->
 

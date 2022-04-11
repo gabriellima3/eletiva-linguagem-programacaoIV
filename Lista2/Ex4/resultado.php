@@ -15,10 +15,10 @@
     <h1>Exercicio 4</h1>
     <?php
     for ($i = 1; $i <= 10; $i++) {
-        $vet[$i] = $_POST["valor$i"];
+        $vetor[$i] = $_POST["valor$i"];
     }
     $total = 0;
-    foreach ($vet as $valor){
+    foreach ($vetor as $valor){
         $total = $total + $valor;
     }
     echo "A média dos números é " .($total/10);

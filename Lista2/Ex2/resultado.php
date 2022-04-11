@@ -24,7 +24,7 @@
               echo "Valor $valor não permitido<br/>";
         }           
         echo "<br/>";
-        
+      
         $existe = false;
 
         foreach($vetor as $chave => $valor)
