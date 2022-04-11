@@ -15,16 +15,16 @@
     <h1>Exercicio 3</h1>
     <?php
     for ($i = 1; $i <= 10; $i++) {
-        $vet[$i] = $_POST["valor$i"];
+        $vetor[$i] = $_POST["valor$i"];
     }  
-    asort($vet);
+    asort($vetor);
     echo "Crescente: <br/>";
-    foreach($vet as $valor){
+    foreach($vetor as $valor){
       echo "$valor, ";
     }
-    arsort($vet);
+    arsort($vetor);
     echo "<br>Decrescente:<br/>";
-    foreach($vet as $valor){
+    foreach($vetor as $valor){
       echo "$valor,  ";
     }
     ?>
