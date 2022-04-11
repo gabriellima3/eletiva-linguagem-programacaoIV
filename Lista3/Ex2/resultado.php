@@ -11,29 +11,23 @@
 
   <title>Exercício 2</title>
 </head>
-<body class="container">
-  <h1>3 - Exercício 2</h1>
-  
-  <form action="resultado.php" method="POST">
-    <div class="row g-2">
-      <?php
-      for ($i = 1; $i <= 10; $i++) {
-      ?>
-        <div class="col-2">
-          <label for="aluno<?= $i ?>" class="label-control">Informe o nome <?= $i ?></label>
-          <input type="text" name="aluno<?= $i ?>" id="aluno<?= $i ?>" class="form-control" />
-        </div>
-      <?php
-      }
-      ?>
-    </div>
-    <div class="row">
-      <div class="col mt-2">
-        <button class="btn btn-danger">Enviar</button>
-      </div>
-    </div>
 
-  </form>
+<body class="container">
+  <h1>Exercício 2</h1>
+  <?php
+  for ($i = 1; $i <= 10; $i++) {
+    $vet[$i] = $_POST["aluno$i"];
+  }
+  function ordenar($vet)
+  {
+    sort($vet);
+    foreach ($vet as $chave => $aluno) {
+      echo "Aluno(a) = $aluno";
+      echo "<br>";
+    }
+  }
+  $ordernarNomes = ordenar($vet);
+  ?>
 
   <!-- Optional JavaScript; choose one of the two! -->
 

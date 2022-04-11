@@ -9,38 +9,31 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <title>Exercício 2</title>
+  <title>Exercício 3</title>
 </head>
-
 <body class="container">
-
-  <h1>Resultado do Exercicio 2</h1>
-
-  <?php
-
-
-  for ($x = 0; $x <= 10; $x++) {
-    $array[$x] = $_POST["valor$x"];
-  }
-  function ordenarNome($array)
-  {
-    sort($array);
-    
-    foreach ($array as $chave => $valor) {
-      echo "$chave = $valor";
-      echo "<br>";
-    }
-    
-  }
+  <h1>3 - Exercício 3</h1>
   
-  $ordernar = ordenarNome($array);
+  <form action="resultado.php" method="POST">
+    <div class="row g-2">
+      <?php
+      for ($i = 1; $i <= 2; $i++) {
+      ?>
+        <div class="col-2">
+          <label for="numero<?= $i ?>" class="label-control">Informe o numero <?= $i ?></label>
+          <input type="number" name="numero<?= $i ?>" id="numero<?= $i ?>" class="form-control" />
+        </div>
+      <?php
+      }
+      ?>
+    </div>
+    <div class="row">
+      <div class="col mt-2">
+        <button class="btn btn-danger">Enviar</button>
+      </div>
+    </div>
 
-
-
-
-
-
-  ?>
+  </form>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
