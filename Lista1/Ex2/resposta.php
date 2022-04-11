@@ -20,7 +20,7 @@
 
       echo "<br/>";
       $valorFinal = $valor1 * $valor2;
-      echo "O valor final do produto é de: ".$valorFinal;
+      echo "O valor final do produto é de: R$".number_format($valorFinal,2);
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->

@@ -27,6 +27,7 @@
                 $posicao = $chave;
             }
         }
+        echo "<br/>";
         echo "O maior valor é $maior e está na posição $posicao";
     ?>
 

@@ -19,8 +19,15 @@
       $valor3 = $_POST['valor3'];
       $valor4 = $_POST['valor4'];
 
-      $resultado = ($valor1 + $valor1 + $valor1 + $valor1 / 10) > 7 ? "Aprovado" : "Reprovado";
-      echo $resultado;
+      $resultado = (($valor1 + $valor2 + $valor3 + $valor4) / 4);
+      echo "Média final: $resultado";
+      echo "<br/>";
+      if ($resultado >= 7){
+        echo "Aprovado";
+      }
+      else{
+        echo "Reprovado";
+      }
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->

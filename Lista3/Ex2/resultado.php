@@ -20,10 +20,11 @@
   }
   function ordenar($vetor)
   {
+    echo "Nomes organizados: ";
     sort($vetor);
     foreach ($vetor as $aluno) {
-      echo "Aluno(a) = $aluno";
-      echo "<br>";
+      echo " $aluno, ";
+      
     }
   }
   ordenar($vetor);
