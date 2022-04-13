@@ -15,7 +15,7 @@
 <body class="container">
     <h1>Exercício 2</h1>
     <?php
-        for ($i = 1; $i <= 1; $i++) {
+        for ($i = 1; $i <= 5; $i++) {
         $vetor[$i] = $_POST["numero$i"];
     }  
     function somaDivisor($numero)
@@ -28,7 +28,9 @@
                 $divisores[] = $i;
             }
         }
-        echo "Divisores do número: " . implode(', ', $divisores) . "<br />";
+        echo "<br/><br/>Divisores do número $numero: ";
+        var_dump($divisores);
+        echo "<br />";
         echo "Total: " . array_sum($divisores) . "\n";
      }
      foreach ($vetor as $n)
