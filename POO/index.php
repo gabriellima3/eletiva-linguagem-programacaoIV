@@ -9,3 +9,6 @@
     echo "<br/>";
     echo "Distancia entre os pontos:".$p1->calcularDistancia2(4,6);
 ?>
+
+    
+        
