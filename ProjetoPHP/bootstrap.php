@@ -16,7 +16,10 @@
     $router->get('/ola-mundo',function(){
         return "Hello World";
     });
-    
+
+    $router->get('/exemplo', '\Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
+
+    $router->post('/exemplo/resultado','\Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
 
     //Adicionar as rotas válidas acima
 
