@@ -23,7 +23,7 @@ class Clientes{
     public function getEmail(){
         return $this->email;
     }
-    public function setIEmail($email){
+    public function setEmail($email){
         $this->email = $email;
     }
     public function getIdade(){
