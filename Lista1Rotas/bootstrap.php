@@ -15,7 +15,7 @@
 
    
 
-    $router->get('/exemplo1', '\Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
+    $router->get('/exercicio1', '\Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
 
     $router->post('/resultado1','\Aluno\ProjetoPhp\Controller\ExercicioController::exibirResultado');
 

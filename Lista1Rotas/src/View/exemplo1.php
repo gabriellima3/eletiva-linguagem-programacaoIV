@@ -35,7 +35,7 @@
     
 
     <?php
-        if (isset($soma))
+        if (isset($troco))
             echo "O valor do troco é $troco";
     ?>
     <!-- Optional JavaScript; choose one of the two! -->

@@ -11,6 +11,7 @@
     <title>Inserir Cliente</title>
   </head>
   <body class="container">
+      <?php require_once "barra_navegacao.php"; ?>
     <h1>Inserir Cliente</h1>
 
     <form action="/cliente/inserir" method="post">
@@ -22,6 +23,7 @@
                 <input type="text" class="form-control"
                         name="nome" id="nome"/>
             </div>
+        <div class="row">    
             <div class="col-5">
                 <label for="email" class="label-control">
                     Informe o email:
@@ -29,6 +31,7 @@
                 <input type="text" class="form-control"
                         name="email" id="email"/>
             </div>
+        <div class="row">
             <div class="col-2">
                 <label for="idade" class="label-control">
                     Informe a idade:
@@ -37,10 +40,10 @@
                         name="idade" id="idade"/>
             </div>
         </div>
-        <div class="row">
-            <div class="col mt-5">
+        <div class="row flex-row-reverse">
+            <div class="col-8">
                 <button type="submit" 
-                        class="btn btn-primary">
+                        class="btn btn-danger">
                     Enviar
                     </button>
             </div>
