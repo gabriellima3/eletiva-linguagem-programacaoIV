@@ -12,30 +12,32 @@
   </head>
   <body class="container">
     <h1>Exemplo</h1>
+    <form method="POST" action ="/resultado1"></form>
 
-    <form method="POST" action="/exemplo-resultado">
-        <div class="row">
-            <div class="col">
-                <label class="label-control">Valor 1</label>
-                <input class="form-control" name="valor1" type="text"/>
-            </div>
-            <div class="col">
-                <label class="label-control">Valor 2</label>
-                <input class="form-control" name="valor2" type="text"/>
-            </div>
+    <div class="row">
+        <div class="col">
+            <label class="label-control">Valor1</label>
+            <input class="form-control" name= "valor1" type="text"/>
         </div>
-        <div class="row">
-            <div class="col">
-                <button type="submit" class="btn btn-primary">Ok</button>
-            </div>
+        <div class="col">
+            <label class="label-control">Valor2</label>
+            <input class="form-control" name= "valor2" type="text"/>
         </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col">
+            <buttom type="submit" class="btn btn-primary">Ok</buttom>
+        </div>
+    </div>
     </form>
     
+
     <?php
         if (isset($soma))
-            echo "O valor da soma é $soma";
+            echo "O valor do troco é $troco";
     ?>
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
