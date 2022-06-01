@@ -33,7 +33,7 @@ class Produtos
     }
     public function setDescricao($descricao)
     {
-        $this->email = $descricao;
+        $this->descricao = $descricao;
     }
 
     public function getValor()
@@ -42,6 +42,6 @@ class Produtos
     }
     public function setValor($valor)
     {
-        $this->idade = $valor;
+        $this->valor = $valor;
     }
 }
