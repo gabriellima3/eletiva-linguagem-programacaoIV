@@ -22,14 +22,14 @@
                         Informe o nome do produto:
                     </label>
                     <input type="text" class="form-control"
-                    name="produto" id="produto" value="<?= $resultado['produto'] ?>"/>
+                    name="nome" id="nome" value="<?= $resultado['nome'] ?>"/>
                 </div>
                 <div class="col-5">
                     <label for="number" class="label-control">
                         Informe o valor do produto:
                     </label>
                     <input type="text" class="form-control"
-                    name="valor" id="valor" value="<?= $resultado['email'] ?>"/>
+                    name="valor" id="valor" value="<?= $resultado['valor'] ?>"/>
                 </div>
                 <div class="col-2">
                     <label for="descricao" class="label-control">
