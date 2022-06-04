@@ -11,8 +11,8 @@
     <title>Hello, world!</title>
   </head>
   <body class="container">
-    <h1>Exemplo</h1>
-    <form method="POST" action ="/resultado1"></form>
+    <h1>Exercício 1</h1>
+    <form method="POST" action ="/resultado1">
 
     <div class="row">
         <div class="col">
@@ -28,12 +28,11 @@
 
     <div class="row">
         <div class="col">
-            <buttom type="submit" class="btn btn-primary">Ok</buttom>
+            <button type="submit" class="btn btn-primary">Ok</button>
         </div>
     </div>
     </form>
     
-
     <?php
         if (isset($troco))
             echo "O valor do troco é $troco";

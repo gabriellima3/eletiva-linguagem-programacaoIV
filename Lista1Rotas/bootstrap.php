@@ -15,9 +15,9 @@
 
    
 
-    $router->get('/exercicio1', '\Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
+    $router->get('/exercicio1', '\Aluno\ProjetoPhp\Controller\Exercicio1Controller::exibir');
 
-    $router->post('/resultado1','\Aluno\ProjetoPhp\Controller\ExercicioController::exibirResultado');
+    $router->post('/resultado1','\Aluno\ProjetoPhp\Controller\Exercicio1Controller::exibirResultado');
 
 
     //Adicionar as rotas válidas acima
