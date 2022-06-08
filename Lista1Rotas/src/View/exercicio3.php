@@ -27,7 +27,8 @@
       </div> 
     </form>
     <?php
-       isset($valor1)
+       if(isset($resultado))
+        echo $resultado;
     ?>
     <!-- Optional JavaScript; choose one of the two! -->
 

@@ -26,9 +26,9 @@
     </div>
 
 
-    <div class="row">
+    <div class="row mt-2">
         <div class="col">
-            <button type="submit" class="btn btn-primary">Ok</button>
+            <button type="submit" class="btn btn-danger">Ok</button>
         </div>
     </div>
     </form>

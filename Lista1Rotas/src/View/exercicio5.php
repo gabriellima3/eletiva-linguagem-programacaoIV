@@ -39,7 +39,11 @@
       </div> 
     </form>
     <?php
-       isset($resultado)
+       if(isset($resultado))
+          echo $resultado;
+          echo "</br>";
+          echo $respostaMedia;
+     
     ?>
     <!-- Optional JavaScript; choose one of the two! -->
 

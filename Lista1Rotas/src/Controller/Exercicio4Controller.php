@@ -14,15 +14,15 @@ class Exercicio4Controller
         $valor1 = $_POST['valor1'];
       if ($valor1 == 0)
       {
-        echo "Igual a zero";
+        $resultado = "Igual a zero";
       }
       elseif ($valor1 > 0)
       {
-        echo "Valor Positivo";
+        $resultado = "Valor Positivo";
       }
       else
       {
-        echo "Valor Negativo";
+        $resultado = "Valor Negativo";
       }
         require_once("../src/View/exercicio4.php");
 

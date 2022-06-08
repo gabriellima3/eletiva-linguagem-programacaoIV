@@ -16,14 +16,14 @@ class Exercicio5Controller
         $valor3 = $_POST['valor3'];
         $valor4 = $_POST['valor4'];
   
-        $resultado = (($valor1 + $valor2 + $valor3 + $valor4) / 4);
-        echo "Média final: $resultado";
+        $mediaFinal = (($valor1 + $valor2 + $valor3 + $valor4) / 4);
+        $respostaMedia = "Média final: $mediaFinal";
         echo "<br/>";
-        if ($resultado >= 7){
-          echo "Aprovado";
+        if ($mediaFinal >= 7){
+          $resultado = "Aprovado";
         }
         else{
-          echo "Reprovado";
+          $resultado = "Reprovado";
         }
         require_once("../src/View/exercicio5.php");
 
